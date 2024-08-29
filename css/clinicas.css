@@ -84,6 +84,16 @@ body{
     color: #9B6847;
     transition: 0.8s;
 }
+#btnPerfil{
+    width: 55px;
+    height: 55px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+#imgPerfil{
+    width: 55px;
+    height: 55px;
+}
 .clinicas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

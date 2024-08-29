@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adocly Animais</title>
     <link rel="stylesheet" href="../css/adocao.css">
+    <script src="../js/adocao.js" defer></script>
 </head>
 <body>
-    
+
     <div class="navegacao">   
         <img src="../Adocly imagens/WhatsApp_Image_2024-05-11_at_16.55.08-removebg-preview.png" alt="" id="imagem">
     </div>
@@ -17,80 +18,277 @@
         <a href="../html/adocao.html"><input type="submit" value="Adoção" id="adocao"></a>
         <a href="../html/endereco.html "> <input type=submit value="Clínicas" id="clinicas"></a>
         <input type="submit" value="Avaliações" id="avaliacoes">
+        <a href="./conta.html" id="btnPerfil"><img src="../Adocly imagens/Perfil.png" alt="" id="imgPerfil"></a>
     </div>
 
     <div class="animais">
 
         <div class="animal-card">
             <img src="../Adocly imagens/Turminha.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="Turminha" onclick="abrirModal()">Informações</button>      
+        </div>
+        <div class="janelaModal" id="janelaModal">
+            <div id="modalAnimais1">
+                <img src="../Adocly imagens/Turminha.jpeg" alt="" id="img-modal">
+            
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: 2 Fêmeas, 6 Machos<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal1">Sair</button>
+                </div>
+            </div>
         </div>
 
         <div class="animal-card">
             <img src="../Adocly imagens/Turminha2.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal2.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="Turminha2" onclick="abrirModal2()">Informações</button>
         </div>
+
+        <div class="janelaModal2" id="janelaModal2">
+            <div id="modalAnimais2">
+            <img src="../Adocly imagens/Turminha2.jpeg" alt="" id="img-modal">
+        
+            <div class="info">
+                <h1>Informações</h1>
+                <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                <h2>Sexo: 2 Fêmeas, 6 Machos<br> Adicional: Sem adicional</h2>
+                <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+            <button id="fecharModal2">Sair</button>
+            </div>
+        </div>
+    </div>  
 
         <div class="animal-card">
             <img src="../Adocly imagens/M.2Fêmea.P.2.Macho.1.Fêmea.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal3.html"><input type="submit" value="Informações" id="btn-info"></a>        
+            <button class="btnInfo" id="MachosFemeas" onclick="abrirModal3()">Informações</button>         
         </div>
+
+        <div class="janelaModal3" id="janelaModal3">
+            <div id="modalAnimais3">
+            <img src="../Adocly imagens/M.2Fêmea.P.2.Macho.1.Fêmea.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Marrom 2 Fêmeas, Preto 2 Machos 1 Fêmea<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal3">Sair</button>
+                </div>
+            </div>
+        </div>  
 
         <div class="animal-card">
             <img src="../Adocly imagens/MãeDaTurminha.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal4.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="MaeDaTurminha" onclick="abrirModal4()">Informações</button>          
         </div>
+
+        <div class="janelaModal4" id="janelaModal4">
+            <div id="modalAnimais4">
+            <img src="../Adocly imagens/MãeDaTurminha.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Fêmea<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal4">Sair</button>
+                </div>
+            </div>
+        </div> 
 
         <div class="animal-card">
             <img src="../Adocly imagens/C.Fêmea.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal5.html"><input type="submit" value="Informações" id="btn-info"></a>          
+            <button class="btnInfo" id="CFemea" onclick="abrirModal5()">Informações</button>           
         </div>
+
+        <div class="janelaModal5" id="janelaModal5">
+            <div id="modalAnimais5">
+            <img src="../Adocly imagens/C.Fêmea.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: 2 Fêmeas<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal5">Sair</button>
+                </div>
+            </div>
+        </div> 
 
         <div class="animal-card">
             <img src="../Adocly imagens/C.Fêmea2.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal6.html"><input type="submit" value="Informações" id="btn-info"></a>        
+            <button class="btnInfo" id="CFemea2" onclick="abrirModal6()">Informações</button>      
         </div>
+
+        <div class="janelaModal6" id="janelaModal6">
+            <div id="modalAnimais6">
+            <img src="../Adocly imagens/C.Fêmea2.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: 2 Fêmeas<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal6">Sair</button>
+                </div>
+            </div>
+        </div>   
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Fêmea.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal7.html"><input type="submit" value="Informações" id="btn-info"></a>           
+            <button class="btnInfo" id="GFemea" onclick="abrirModal7()">Informações</button>         
         </div>
+
+        <div class="janelaModal7" id="janelaModal7">
+            <div id="modalAnimais7">
+            <img src="../Adocly imagens/G.Fêmea.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Fêmea <br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal7">Sair</button>
+                </div>
+            </div>
+        </div>   
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Fêmea2.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal8.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="GFemea2" onclick="abrirModal8()">Informações</button>          
         </div>
+
+        <div class="janelaModal8" id="janelaModal8">
+            <div id="modalAnimais8">
+            <img src="../Adocly imagens/G.Fêmea2.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Fêmea<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal8">Sair</button>
+                </div>
+            </div>
+        </div> 
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Fêmeas.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal9.html"><input type="submit" value="Informações" id="btn-info"></a>          
+            <button class="btnInfo" id="GFemeas" onclick="abrirModal9()">Informações</button>          
         </div>
+
+        <div class="janelaModal9" id="janelaModal9">
+            <div id="modalAnimais9">
+            <img src="../Adocly imagens/G.Fêmeas.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: 2 Fêmeas<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal9">Sair</button>
+                </div>
+            </div>
+        </div> 
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Macho.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal10.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="GMacho" onclick="abrirModal10()">Informações</button>    
         </div>
+
+        <div class="janelaModal10" id="janelaModal10">
+            <div id="modalAnimais10">
+            <img src="../Adocly imagens/G.Macho.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Macho<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal10">Sair</button>
+                </div>
+            </div>
+        </div>     
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Macho2.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal11.html"><input type="submit" value="Informações" id="btn-info"></a>        
+            <button class="btnInfo" id="GMacho2" onclick="abrirModal11()">Informações</button>    
         </div>
+
+        <div class="janelaModal11" id="janelaModal11">
+            <div id="modalAnimais11">
+            <img src="../Adocly imagens/G.Macho2.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Frajolas 2 Machos, Rajada 1 Fêmea<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal11">Sair</button>
+                </div>
+            </div>
+        </div>    
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Macho3.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal12.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="GMacho3" onclick="abrirModal12()">Informações</button>         
         </div>
+
+        <div class="janelaModal12" id="janelaModal12">
+            <div id="modalAnimais12">
+            <img src="../Adocly imagens/G.Macho3.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Indefinido<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Macho<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal12">Sair</button>
+                </div>
+            </div>
+        </div> 
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Charlie.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal13.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="GCharlie" onclick="abrirModal13()">Informações</button>         
         </div>
+
+        <div class="janelaModal13" id="janelaModal13">
+            <div id="modalAnimais13">
+            <img src="../Adocly imagens/G.Charlie.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Charlie<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Macho<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal13">Sair</button>
+                </div>
+            </div>
+        </div>  
 
         <div class="animal-card">
             <img src="../Adocly imagens/G.Nina.jpeg" alt="" id="img-animal">                      
-            <a href="./Tela.infoAnimal14.html"><input type="submit" value="Informações" id="btn-info"></a>         
+            <button class="btnInfo" id="GNina" onclick="abrirModal14()">Informações</button>          
+        </div>
+
+        <div class="janelaModal14" id="janelaModal14">
+            <div id="modalAnimais14">
+            <img src="../Adocly imagens/G.Nina.jpeg" alt="" id="img-modal">
+        
+                <div class="info">
+                    <h1>Informações</h1>
+                    <h2>Nome: Nina<br> Idade: Indefinido</h2>
+                    <h2>Sexo: Macho<br> Adicional: Sem adicional</h2>
+                    <h2>Instituição: Centro de Zoonose<br> Telefone: 64872364786234</h2>
+                <button id="fecharModal14">Sair</button>
+                </div>
+            </div>
         </div>
 
     </div>
 </body>
 </html>
+
