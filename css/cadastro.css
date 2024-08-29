@@ -9,7 +9,7 @@ body{
     background-image: url(Background\ Adocly.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: button center;
+    background-position: cover;
     width: 100%;
     height: 100%;
 }
@@ -129,7 +129,7 @@ a #voltar{
     border: none;
 }
 
-@media (min-width: 300px) and (max-width: 1000px){
+@media (min-width: 300px) and (max-width: 1300px){
     
     body{
         background-image: url(Background\ Adocly.png);
