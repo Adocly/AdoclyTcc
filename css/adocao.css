@@ -9,6 +9,7 @@ body{
     background-image: url(./Tela\ verde.png);
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 .navegacao{
     background-image:url("./Branco2.png");
@@ -180,4 +181,3 @@ body{
 .janelaModal13.abrir13, .janelaModal14.abrir14{
     display: flex;
 }
-
