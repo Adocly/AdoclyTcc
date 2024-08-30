@@ -179,7 +179,6 @@ p{
         display: flex;
         align-items:flex-start;
         justify-content: space-between;
-       /* transition: all .50% ease; */
     }svg{
         width: 35px;
         height: 60px;

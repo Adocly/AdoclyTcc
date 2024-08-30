@@ -41,9 +41,6 @@ a{
 a:hover{
     color: #9B6847;
     transition: 0.8s;
-    /*cursor: pointer;
-    background-color: white;
-    border: solid 2px #9B6847;*/
 }
 img{
     width: 300px;
