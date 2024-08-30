@@ -101,7 +101,7 @@ body{
     background-color: #6AB1E4;
     font-family: Merriweather;
 }
-a #criar:hover{
+#criar:hover{
     color: #9B6847;
     transition: 0.8s;
 }
