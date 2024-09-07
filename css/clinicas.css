@@ -93,6 +93,7 @@ body{
 #imgPerfil{
     width: 55px;
     height: 55px;
+    margin-left: 35px;
 }
 .clinicas{
     display: grid;
